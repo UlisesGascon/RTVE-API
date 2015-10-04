@@ -12,6 +12,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 
 **Encuestas**
 
+*[Ejmeplos y detalles](encuestas/README.md)*
+
 - [/encuestas](http://www.rtve.es/api/encuestas.json)
 - [/encuestas/{id}](http://www.rtve.es/api/encuestas/51931.json)
 - */encuestas/{id}/breadcrumb - ERROR 400*
@@ -22,6 +24,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 
 
 **VideoGalerias**
+
+*[Ejmeplos y detalles](videogalerias/README.md)*
 
 - [/videogalerias](http://www.rtve.es/api/videogalerias.json)
 - [/videogalerias/{id}](http://www.rtve.es/api/videogalerias/147975.json)
@@ -35,6 +39,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 
 **Agr-programas**
 
+*[Ejmeplos y detalles](agr-programas/README.md)*
+
 - [/agr-programas](http://www.rtve.es/api/agr-programas.json)
 - [/agr-programas/{id}](http://www.rtve.es/api/agr-programas/1130.json)
 - [/agr-programas/{id}/programas](http://www.rtve.es/api/agr-programas/1130/programas.json)
@@ -45,11 +51,15 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 
 **Multimedias**
 
+*[Ejmeplos y detalles](multimedias/README.md)*
+
 - [/multimedias](http://www.rtve.es/api/multimedias.json)
 - [/multimedias/{id}](http://www.rtve.es/api/multimedias/3309959.json)
 
 
 **Noticias**
+
+*[Ejmeplos y detalles](noticias/README.md)*
 
 - [/noticias](http://www.rtve.es/api/noticias.json)
 - [/noticias/{id}](http://www.rtve.es/api/noticias/1231600.json)
@@ -62,6 +72,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 
 
 **Cadenas**
+
+*[Ejmeplos y detalles](cadenas/README.md)*
 
 - [/cadenas](http://www.rtve.es/api/cadenas.json)
 - [/cadenas/{id}](http://www.rtve.es/api/cadenas/745.json)
@@ -86,6 +98,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 
 **Agrupadores**
 
+*[Ejmeplos y detalles](agrupadores/README.md)*
+
 - [/agrupadores](http://www.rtve.es/api/agrupadores.json)
 - [/agrupadores/{id}](http://www.rtve.es/api/agrupadores/42273.json)
 - [/agrupadores/{id}/hijos](http://www.rtve.es/api/agrupadores/42273/hijos.json)
@@ -96,6 +110,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 
 
 **Temáticas**
+
+*[Ejmeplos y detalles](tematicas/README.md)*
 
 Algunos IDs y UIDs importantes
 
@@ -134,12 +150,16 @@ ID | UID | Descripción
 
 **Blogs**
 
+*[Ejmeplos y detalles](blogs/README.md)*
+
 - [/blogs](http://www.rtve.es/api/blogs.json)
 - [/blogs/{id}](http://www.rtve.es/api/blogs/5330.json)
 - */blogs/{id}/breadcrumb - ERROR 400*
 
 
 **Programas**
+
+*[Ejmeplos y detalles](programas/README.md)*
 
 - [/programas](http://www.rtve.es/api/programas.json)
 - [/programas/{id}](http://www.rtve.es/api/programas/63010.json)
@@ -155,9 +175,10 @@ ID | UID | Descripción
 - [/programas/{id}/relacionados/relacionados-por-idioma](http://www.rtve.es/api/programas/63010/relacionados/relacionados-por-idioma.json)
 
 
-startWithLetter
 
 **Videos**
+
+*[Ejmeplos y detalles](videos/README.md)*
 
 - [/videos/{id}/tematicas](http://www.rtve.es/api/videos/3309918/tematicas.json)
 - [/videos/{id}/calidades](http://www.rtve.es/api/videos/3309918/calidades.json)
@@ -175,6 +196,8 @@ startWithLetter
 
 
 **Medios**
+
+*[Ejmeplos y detalles](medios/README.md)*
 
 - [/medios/{id}](http://www.rtve.es/api/medios/310.json)
 - [/medios/{id}/cadenas](http://www.rtve.es/api/medios/310/cadenas.json)
