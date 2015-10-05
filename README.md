@@ -216,6 +216,17 @@ ID | UID | Descripción
 - [/audios/{id}/calidades](http://www.rtve.es/api/audios/3311086/calidades.json)
 
 
+**Imágenes**
+
+*[Ejemplos y detalles](audios/README.md)*
+
+- [/imagenes](http://api.rtve.es/api/imagenes.json)
+- [/imagenes/{id}](http://api.rtve.es/api/imagenes/3311283.json)
+- [/imagenes/{id}/breadcrumb](http://www.rtve.es/api/imagenes/3311283/breadcrumb.json)
+- [/imagenes/{id}/calidades](http://www.rtve.es/api/imagenes/3311283/calidades.json)
+- [/imagenes/{id}/tematicas](http://www.rtve.es/api/imagenes/3311403/tematicas.json)
+
+
 **Medios**
 
 *[Ejemplos y detalles](medios/README.md)*
