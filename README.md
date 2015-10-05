@@ -180,6 +180,8 @@ ID | UID | Descripción
 
 *[Ejemplos y detalles](videos/README.md)*
 
+- [/videos](http://www.rtve.es/api/videos.json)
+- [/videos/{id}](http://www.rtve.es/api/videos/3309918.json)
 - [/videos/{id}/tematicas](http://www.rtve.es/api/videos/3309918/tematicas.json)
 - [/videos/{id}/calidades](http://www.rtve.es/api/videos/3309918/calidades.json)
 - [/videos/{id}/cuepoints](http://www.rtve.es/api/videos/3309918/cuepoints.json)
@@ -195,10 +197,30 @@ ID | UID | Descripción
 - [/videos/{id}/subtitulos](http://www.rtve.es/api/videos/3309918/subtitulos.json)
 
 
+**Audios**
+
+*[Ejemplos y detalles](audios/README.md)*
+
+- [/audios](http://api.rtve.es/api/audios.json)
+- [/audios/{id}](http://api.rtve.es/api/audios/3311086.json)
+- [/audios/{id}/estadisticas](http://www.rtve.es/api/audios/3311086/estadisticas.json)
+- [/audios/{id}/relacionados](http://www.rtve.es/api/audios/3311086/relacionados.json)
+- [/audios/{id}/relacionados/relacionados-por-idioma](http://www.rtve.es/api/audios/3311086/relacionados/relacionados-por-idioma.json)
+- [/audios/{id}/relacionados/manuales](http://www.rtve.es/api/audios/3311086/relacionados/manuales.json)
+- [/audios/{id}/publicidad](http://www.rtve.es/api/audios/3311086/publicidad.json)
+- [/audios/{id}/comentarios](http://www.rtve.es/api/audios/3311086/comentarios.json)
+- [/audios/{id}/cuepoints](http://www.rtve.es/api/audios/3311086/cuepoints.json)
+- [/audios/{id}/config/audio](http://www.rtve.es/api/audios/3311086/config/audio.json)
+- [/audios/{id}/transcripcion](http://www.rtve.es/api/audios/3311086/transcripcion.json)
+- [/audios/{id}/temporadas](http://www.rtve.es/api/audios/3311086/temporadas.json)
+- [/audios/{id}/calidades](http://www.rtve.es/api/audios/3311086/calidades.json)
+
+
 **Medios**
 
 *[Ejemplos y detalles](medios/README.md)*
 
+- [/medios](http://www.rtve.es/api/medios.json)
 - [/medios/{id}](http://www.rtve.es/api/medios/310.json)
 - [/medios/{id}/cadenas](http://www.rtve.es/api/medios/310/cadenas.json)
 - [/medios/{id}/programas](http://www.rtve.es/api/medios/310/programas.json)
@@ -299,6 +321,18 @@ http://www.rtve.es/api/programas.json?lastDays=2
 - **?lang=** -> *"es"* para español y *"ca"* para catalán
 - **Videos** -> *Es necesario un Token y un Provedor, la url por defecto de todos los videos es "http://ztnr.rtve.es/ztnr/res/_PROVIDER_/video/med/_TOKEN_"*
 
+
+### Alternativas Conocidas
+
+**Embed**
+
+Video *embed*
+
+- [http://www.rtve.es/drmn/embed/video/{id}](http://www.rtve.es/drmn/embed/video/3310258)
+
+Audio *embed*
+
+- [http://www.rtve.es/drmn/embed/audio/{id}](http://www.rtve.es/drmn/embed/audio/3311086)
 
 ### Información Adiccional
 - [API RTVE en Wikibooks](https://es.wikibooks.org/wiki/API_Rtve)
