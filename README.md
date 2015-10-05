@@ -15,6 +15,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 *[Ejemplos y detalles](encuestas/README.md)*
 
 - [/encuestas](http://www.rtve.es/api/encuestas.json)
+- [/encuestas/mas-vistos](http://api.rtve.es/api/encuestas/mas-vistos.json)
+- [/encuestas/mas-populares](http://api.rtve.es/api/encuestas/mas-populares.json)
 - [/encuestas/{id}](http://www.rtve.es/api/encuestas/51931.json)
 - */encuestas/{id}/breadcrumb - ERROR 400*
 - [/encuestas/{id}/tematicas](http://www.rtve.es/api/encuestas/51931/tematicas.json)
@@ -28,6 +30,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 *[Ejemplos y detalles](videogalerias/README.md)*
 
 - [/videogalerias](http://www.rtve.es/api/videogalerias.json)
+- [/videogalerias/mas-vistos](http://api.rtve.es/api/videogalerias/mas-vistos.json)
+- [/videogalerias/mas-populares](http://api.rtve.es/api/videogalerias/mas-populares.json)
 - [/videogalerias/{id}](http://www.rtve.es/api/videogalerias/147975.json)
 - */videogalerias/{id}/breadcrumb - ERROR 400*
 - [/videogalerias/{id}/multimedias](http://www.rtve.es/api/videogalerias/147975/multimedias.json)
@@ -42,6 +46,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 *[Ejemplos y detalles](agr-programas/README.md)*
 
 - [/agr-programas](http://www.rtve.es/api/agr-programas.json)
+- [/agr-programas/mas-vistos](http://api.rtve.es/api/agr-programas/mas-vistos.json)
+- [/agr-programas/mas-populares](http://api.rtve.es/api/agr-programas/mas-populares.json)
 - [/agr-programas/{id}](http://www.rtve.es/api/agr-programas/1130.json)
 - [/agr-programas/{id}/programas](http://www.rtve.es/api/agr-programas/1130/programas.json)
 - [/agr-programas/{id}/videos](http://www.rtve.es/api/agr-programas/1130/videos.json)
@@ -54,6 +60,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 *[Ejemplos y detalles](multimedias/README.md)*
 
 - [/multimedias](http://www.rtve.es/api/multimedias.json)
+- [/multimedias/mas-vistos](http://api.rtve.es/api/multimedias/mas-vistos.json)
+- [/multimedias/mas-populares](http://api.rtve.es/api/multimedias/mas-populares.json)
 - [/multimedias/{id}](http://www.rtve.es/api/multimedias/3309959.json)
 
 
@@ -62,6 +70,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 *[Ejemplos y detalles](noticias/README.md)*
 
 - [/noticias](http://www.rtve.es/api/noticias.json)
+- [/noticias/mas-vistos](http://api.rtve.es/api/noticias/mas-vistos.json)
+- [/noticias/mas-populares](http://api.rtve.es/api/noticias/mas-populares.json)
 - [/noticias/{id}](http://www.rtve.es/api/noticias/1231600.json)
 - [/noticias/{id}/tematicas](http://www.rtve.es/api/noticias/1231600/tematicas.json)
 - [/noticias/{id}/noticias/relacionados](http://www.rtve.es/api/noticias/1231600/noticias/relacionados.json)
@@ -76,6 +86,8 @@ Se recomienda utilizar *[Jsonviewer](http://jsonviewer.stack.hu/)* para poder vi
 *[Ejemplos y detalles](cadenas/README.md)*
 
 - [/cadenas](http://www.rtve.es/api/cadenas.json)
+- [/cadenas/mas-vistos](http://api.rtve.es/api/cadenas/mas-vistos.json)
+- [/cadenas/mas-populares](http://api.rtve.es/api/cadenas/mas-populares.json)
 - [/cadenas/{id}](http://www.rtve.es/api/cadenas/745.json)
 - [/cadenas/{id}/programas](http://www.rtve.es/api/cadenas/745/programas.json)
 - [/cadenas/{id}/videos](http://www.rtve.es/api/cadenas/745/videos.json)
@@ -153,6 +165,8 @@ ID | UID | Descripción
 *[Ejemplos y detalles](blogs/README.md)*
 
 - [/blogs](http://www.rtve.es/api/blogs.json)
+- [/blogs/mas-vistos](http://api.rtve.es/api/blogs/mas-vistos.json)
+- [/blogs/mas-populares](http://api.rtve.es/api/blogs/mas-populares.json)
 - [/blogs/{id}](http://www.rtve.es/api/blogs/5330.json)
 - */blogs/{id}/breadcrumb - ERROR 400*
 
@@ -162,6 +176,8 @@ ID | UID | Descripción
 *[Ejemplos y detalles](programas/README.md)*
 
 - [/programas](http://www.rtve.es/api/programas.json)
+- [/programas/mas-vistos](http://api.rtve.es/api/programas/mas-vistos.json)
+- [/programas/mas-populares](http://api.rtve.es/api/programas/mas-populares.json)
 - [/programas/{id}](http://www.rtve.es/api/programas/63010.json)
 - [/programas/{id}/secciones](http://www.rtve.es/api/programas/63010/secciones.json)
 - [/programas/{id}/temporadas](http://www.rtve.es/api/programas/63010/temporadas.json)
@@ -181,6 +197,8 @@ ID | UID | Descripción
 *[Ejemplos y detalles](videos/README.md)*
 
 - [/videos](http://www.rtve.es/api/videos.json)
+- [/videos/mas-vistos](http://api.rtve.es/api/videos/mas-vistos.json)
+- [/videos/mas-populares](http://api.rtve.es/api/videos/mas-populares.json)
 - [/videos/{id}](http://www.rtve.es/api/videos/3309918.json)
 - [/videos/{id}/tematicas](http://www.rtve.es/api/videos/3309918/tematicas.json)
 - [/videos/{id}/calidades](http://www.rtve.es/api/videos/3309918/calidades.json)
@@ -202,6 +220,8 @@ ID | UID | Descripción
 *[Ejemplos y detalles](audios/README.md)*
 
 - [/audios](http://api.rtve.es/api/audios.json)
+- [/audios/mas-vistos](http://api.rtve.es/api/audios/mas-vistos.json)
+- [/audios/mas-populares](http://api.rtve.es/api/audios/mas-populares.json)
 - [/audios/{id}](http://api.rtve.es/api/audios/3311086.json)
 - [/audios/{id}/estadisticas](http://www.rtve.es/api/audios/3311086/estadisticas.json)
 - [/audios/{id}/relacionados](http://www.rtve.es/api/audios/3311086/relacionados.json)
@@ -221,6 +241,8 @@ ID | UID | Descripción
 *[Ejemplos y detalles](audios/README.md)*
 
 - [/imagenes](http://api.rtve.es/api/imagenes.json)
+- [/imagenes/mas-vistos](http://api.rtve.es/api/imagenes/mas-vistos.json)
+- [/imagenes/mas-populares](http://api.rtve.es/api/imagenes/mas-populares.json)
 - [/imagenes/{id}](http://api.rtve.es/api/imagenes/3311283.json)
 - [/imagenes/{id}/breadcrumb](http://www.rtve.es/api/imagenes/3311283/breadcrumb.json)
 - [/imagenes/{id}/calidades](http://www.rtve.es/api/imagenes/3311283/calidades.json)
