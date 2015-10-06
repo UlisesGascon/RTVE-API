@@ -1,5 +1,20 @@
 # /Multimedias
 
+
+### Demo
+
+- [Mostrando un archivo multimedia partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=3312498
+```
+
+- [Mostrando los archivos multimedia más populares](demopopulares.html)
+- [Mostrando los archivos multimedia más vistos](demovistos.html)
+
+
 ### Ejemplos
 
 
