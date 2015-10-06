@@ -1,5 +1,48 @@
 # /Cadenas
 
+### Demo
+
+- [Mostrando los audios de una cadena partiendo de una ID](demoaudios.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoaudios.html?id=670
+```
+
+- [Mostrando los videos de una cadena partiendo de una ID](demovideos.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demovideos.html?id=670
+```
+
+- [Mostrando los programas de una cadena partiendo de una ID](demoprogramas.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoprogramas.html?id=670
+```
+
+- [Mostrando los archivos multimedia de una cadena partiendo de una ID](demomultimedias.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demomultimedias.html?id=670
+```
+
+- [Mostrando los detalles de una cadena partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=670
+```
+
+
 ### Ejemplos
 
 
