@@ -2,7 +2,7 @@
 <html>
   <head>
   	<meta charset="utf-8">
-    <title>Videos más populares</title>
+    <title>Audios más populares</title>
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<style type="text/css">
@@ -55,7 +55,7 @@
 				        dato = datos.page.items[i];
 					    datosListos = '<div class="col-xs-6 col-lg-4"><div class="panel panel-info">';
 
-						datosListos += '<div class="panel-body"><a target="_blank" href="http://www.rtve.es/drmn/embed/video/'+dato.id+'"><img class="img-responsive" src="'+dato.imageSEO+'" alt="'+dato.alt+'"></a>';
+						datosListos += '<div class="panel-body"><a target="_blank" href="http://www.rtve.es/drmn/embed/audio/'+dato.id+'"><img class="img-responsive" src="'+dato.imageSEO+'" alt="'+dato.alt+'"></a>';
 
 						datosListos += '<div class="texto-titulo"><p>'+dato.title+'</p></div><hr>'
 
@@ -83,7 +83,7 @@
 			    }
 			};
 
-			xmlHttp.open("GET", "http://api.rtve.es/api/videos/mas-populares.json?size=60", true);
+			xmlHttp.open("GET", "http://api.rtve.es/api/audios/mas-populares.json?size=60", true);
 			xmlHttp.send();
 		};
 		iniciar();

@@ -2,7 +2,7 @@
 <html>
   <head>
   	<meta charset="utf-8">
-    <title>Un video por ID</title>
+    <title>Un audio por ID</title>
     <!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<style type="text/css">
@@ -34,7 +34,7 @@
 		};
 
 		function iniciar () {
-			id = sacarVariablesUrl()["id"] || "3310258";
+			id = sacarVariablesUrl()["id"] || "3311086";
 			var xmlHttp = new XMLHttpRequest();
 
 			xmlHttp.onreadystatechange = function() {
@@ -46,7 +46,7 @@
 			        dato = datos.page.items[0];
 			        var datosListos = '<div class="panel panel-info tarjeta">';
 					datosListos += '<div class="panel-heading" id="titulo"><strong>'+dato.title+'</strong></div>';
-					datosListos += '<div class="panel-body"><a target="_blank" href="http://www.rtve.es/drmn/embed/video/'+id+'"><img src="'+dato.imageSEO+'" alt="'+dato.alt+'"></a>';
+					datosListos += '<div class="panel-body"><a target="_blank" href="http://www.rtve.es/drmn/embed/audio/'+id+'"><img src="'+dato.imageSEO+'" alt="'+dato.alt+'"></a>';
 					if (dato.programInfo && dato.programInfo.title != null) {
 						datosListos += '<h4>En '+dato.programInfo.title+'</h4>';
 					};
@@ -76,7 +76,7 @@
 			    }
 			};
 
-			xmlHttp.open("GET", "http://api.rtve.es/api/videos/"+id+".json", true);
+			xmlHttp.open("GET", "http://api.rtve.es/api/audios/"+id+".json", true);
 			xmlHttp.send();
 		};
 		iniciar();

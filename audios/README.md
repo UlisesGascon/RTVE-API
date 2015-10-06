@@ -1,5 +1,20 @@
 # /Audios
 
+### Demo
+
+- [Mostrando un audio partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=3312498
+```
+
+- [Mostrando los audios más populares](demopopulares.html)
+- [Mostrando los audios más vistos](demovistos.html)
+
+
+
 ### Ejemplos
 
 
