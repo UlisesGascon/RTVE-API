@@ -1,5 +1,40 @@
 # /Tematicas
 
+### Demo
+
+- [Mostrando los audios de una temática partiendo de una ID](demoaudios.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoaudios.html?id=814
+```
+
+- [Mostrando los videos de una temática partiendo de una ID](demovideos.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demovideos.html?id=814
+```
+
+- [Mostrando las noticias de una temática partiendo de una ID](demonoticias.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demonoticias.html?id=814
+```
+
+- [Mostrando los detalles de una temática partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=814
+```
+
+
 ### Ejemplos
 
 
