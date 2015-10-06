@@ -1,5 +1,40 @@
 # /Programas
 
+### Demo
+
+- [Mostrando los audios de un programa partiendo de una ID](demoaudios.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoaudios.html?id=91190
+```
+
+- [Mostrando los videos de un programa partiendo de una ID](demovideos.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demovideos.html?id=91190
+```
+
+- [Mostrando los archivos multimedia de un programa partiendo de una ID](demomultimedias.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demomultimedias.html?id=91190
+```
+
+- [Mostrando los detalles de un programa partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=91190
+```
+
+
 ### Ejemplos
 
 
