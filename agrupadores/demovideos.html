@@ -53,7 +53,7 @@
 			        datos = JSON.parse(xmlHttp.responseText);
 			        console.log(datos);
 
-			        for (var i = 0; i < 60; i++) {
+			        for (var i = 0; i < datos.page.numElements; i++) {
 			        	var dato = datos.page.items[i];
 			        	console.log(dato);
 

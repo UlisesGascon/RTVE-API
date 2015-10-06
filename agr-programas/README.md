@@ -1,5 +1,51 @@
 # /Agr-programas
 
+### Demo
+
+- [Mostrando los audios de un agr-programas partiendo de una ID](demoaudios.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoaudios.html?id=42172
+```
+
+- [Mostrando los videos de un agr-programas partiendo de una ID](demovideos.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demovideos.html?id=42172
+```
+
+- [Mostrando los archivos multimedia de un agr-programas partiendo de una ID](demomultimedias.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demomultimedias.html?id=42172
+```
+
+- [Mostrando los programas de un agr-programas partiendo de una ID](demoprogramas.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoprogramas.html?id=42172
+```
+
+- [Mostrando lso detalles de un agr-programa partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=3312498
+```
+
+- [Mostrando los agr-programas más populares](demopopulares.html)
+- [Mostrando los agr-programas más vistos](demovistos.html)
+
+
 ### Ejemplos
 
 
