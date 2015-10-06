@@ -1,5 +1,19 @@
 # /Imagenes
 
+### Demo
+
+- [Mostrando una imagen partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=3312498
+```
+
+- [Mostrando las imagenes más populares](demopopulares.html)
+- [Mostrando las imagenes más vistas](demovistos.html)
+
+
 ### Ejemplos
 
 

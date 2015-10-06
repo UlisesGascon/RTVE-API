@@ -3,7 +3,7 @@
 
 ### Demo
 
-- [Mostrando una videogaleria en un carusel partiendo de una ID](demoid.html)
+- [Mostrando una videogaleria en un carousel partiendo de una ID](demoid.html)
 
 Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
 
