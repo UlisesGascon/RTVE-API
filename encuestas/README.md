@@ -1,5 +1,10 @@
 # /Encuestas
 
+### Demo
+
+- [Mostrando encuestas](demo.html)
+
+
 ### Ejemplos
 
 
