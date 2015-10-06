@@ -26,7 +26,7 @@ Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
 demoid.html?id=1233541
 ```
 
-- [Mostrando las noticias más vistas](demovistas.html)
+- [Mostrando las noticias más vistas](demovistos.html)
 - [Mostrando las noticias más populares](demopopulares.html)
 
 

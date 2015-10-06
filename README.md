@@ -353,6 +353,8 @@ http://www.rtve.es/api/programas.json?lastDays=2
 - **?size=** -> *Mínimo 1 - Máximo 60*
 - **?lang=** -> *"es"* para español y *"ca"* para catalán
 - **Videos** -> *Es necesario un Token y un Provedor, la url por defecto de todos los videos es "http://ztnr.rtve.es/ztnr/res/_PROVIDER_/video/med/_TOKEN_"*
+- **/blogs/mas-vistos** -> duplica/triplica los elementos
+- **/blogs/mas-populares** -> duplica/triplica los elementos
 
 
 ### Alternativas Conocidas

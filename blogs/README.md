@@ -1,5 +1,19 @@
 # /Blog
 
+### Demo
+
+- [Mostrando una entrada de blog partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=870
+```
+
+- [Mostrando las entrada de blog más populares](demopopulares.html)
+- [Mostrando las entrada de blog más vistas](demovistos.html)
+
+
 ### Ejemplos
 
 
