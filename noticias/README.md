@@ -1,5 +1,35 @@
 # /Noticias
 
+### Demo
+
+- [Mostrando multimedia similar a la noticia partiendo de una ID](demosimilaresmultimedia.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demosimilaresmultimedia.html?id=1233541
+```
+
+- [Mostrando noticias similares partiendo de una ID](demosimilares.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demosimilares.html?id=1233541
+```
+
+- [Mostrando los detalles de una noticia partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=1233541
+```
+
+- [Mostrando las noticias más vistas](demovistas.html)
+- [Mostrando las noticias más populares](demopopulares.html)
+
+
 ### Ejemplos
 
 
