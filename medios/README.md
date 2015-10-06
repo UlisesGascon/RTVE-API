@@ -1,5 +1,52 @@
 # /Medios
 
+### Demo
+
+- [Mostrando los audios de un medio partiendo de una ID](demoaudios.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoaudios.html?id=414
+```
+
+- [Mostrando los videos de un medio partiendo de una ID](demovideos.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demovideos.html?id=414
+```
+
+- [Mostrando los archivos multimedia de un medio partiendo de una ID](demomultimedias.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demomultimedias.html?id=414
+```
+
+- [Mostrando los programas de un medio partiendo de una ID](demoprogramas.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoprogramas.html?id=414
+```
+
+- [Mostrando los detalles de un medio partiendo de una ID](demoid.html)
+
+Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
+
+```
+demoid.html?id=414
+```
+
+- [Mostrando los archivos multimedia más populares del medio](demopopulares.html)
+- [Mostrando los archivos multimedia más vistos del medi](demovistos.html)
+
+
+
 ### Ejemplos
 
 

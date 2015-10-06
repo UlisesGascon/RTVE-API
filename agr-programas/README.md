@@ -7,7 +7,7 @@
 Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
 
 ```
-demoaudios.html?id=42172
+demoaudios.html?id=1130
 ```
 
 - [Mostrando los videos de un agr-programas partiendo de una ID](demovideos.html)
@@ -15,7 +15,7 @@ demoaudios.html?id=42172
 Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
 
 ```
-demovideos.html?id=42172
+demovideos.html?id=1130
 ```
 
 - [Mostrando los archivos multimedia de un agr-programas partiendo de una ID](demomultimedias.html)
@@ -23,7 +23,7 @@ demovideos.html?id=42172
 Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
 
 ```
-demomultimedias.html?id=42172
+demomultimedias.html?id=1130
 ```
 
 - [Mostrando los programas de un agr-programas partiendo de una ID](demoprogramas.html)
@@ -31,15 +31,15 @@ demomultimedias.html?id=42172
 Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
 
 ```
-demoprogramas.html?id=42172
+demoprogramas.html?id=1130
 ```
 
-- [Mostrando lso detalles de un agr-programa partiendo de una ID](demoid.html)
+- [Mostrando los detalles de un agr-programa partiendo de una ID](demoid.html)
 
 Para utilizar otra id, solo necesitas pasarlo como parámetro en la url.
 
 ```
-demoid.html?id=3312498
+demoid.html?id=1130
 ```
 
 - [Mostrando los agr-programas más populares](demopopulares.html)
