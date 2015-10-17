@@ -42,8 +42,8 @@ Se recomienda utilizar <em><a href="http://jsonviewer.stack.hu/">Jsonviewer</a><
 
 <ul>
 <li><a href="http://www.rtve.es/api/encuestas.json">/encuestas</a></li>
-<li><a href="http://api.rtve.es/api/encuestas/mas-vistos.json">/encuestas/mas-vistos</a></li>
-<li><a href="http://api.rtve.es/api/encuestas/mas-populares.json">/encuestas/mas-populares</a></li>
+<li><a href="http://www.rtve.es/api/encuestas/mas-vistos.json">/encuestas/mas-vistos</a></li>
+<li><a href="http://www.rtve.es/api/encuestas/mas-populares.json">/encuestas/mas-populares</a></li>
 <li><a href="http://www.rtve.es/api/encuestas/51931.json">/encuestas/{id}</a></li>
 <li><em>/encuestas/{id}/breadcrumb - ERROR 400</em></li>
 <li><a href="http://www.rtve.es/api/encuestas/51931/tematicas.json">/encuestas/{id}/tematicas</a></li>
@@ -68,8 +68,8 @@ Se recomienda utilizar <em><a href="http://jsonviewer.stack.hu/">Jsonviewer</a><
 
 <ul>
 <li><a href="http://www.rtve.es/api/videogalerias.json">/videogalerias</a></li>
-<li><a href="http://api.rtve.es/api/videogalerias/mas-vistos.json">/videogalerias/mas-vistos</a></li>
-<li><a href="http://api.rtve.es/api/videogalerias/mas-populares.json">/videogalerias/mas-populares</a></li>
+<li><a href="http://www.rtve.es/api/videogalerias/mas-vistos.json">/videogalerias/mas-vistos</a></li>
+<li><a href="http://www.rtve.es/api/videogalerias/mas-populares.json">/videogalerias/mas-populares</a></li>
 <li><a href="http://www.rtve.es/api/videogalerias/147975.json">/videogalerias/{id}</a></li>
 <li><em>/videogalerias/{id}/breadcrumb - ERROR 400</em></li>
 <li><a href="http://www.rtve.es/api/videogalerias/147975/multimedias.json">/videogalerias/{id}/multimedias</a></li>
@@ -101,8 +101,8 @@ Se recomienda utilizar <em><a href="http://jsonviewer.stack.hu/">Jsonviewer</a><
 
 <ul>
 <li><a href="http://www.rtve.es/api/agr-programas.json">/agr-programas</a></li>
-<li><a href="http://api.rtve.es/api/agr-programas/mas-vistos.json">/agr-programas/mas-vistos</a></li>
-<li><a href="http://api.rtve.es/api/agr-programas/mas-populares.json">/agr-programas/mas-populares</a></li>
+<li><a href="http://www.rtve.es/api/agr-programas/mas-vistos.json">/agr-programas/mas-vistos</a></li>
+<li><a href="http://www.rtve.es/api/agr-programas/mas-populares.json">/agr-programas/mas-populares</a></li>
 <li><a href="http://www.rtve.es/api/agr-programas/1130.json">/agr-programas/{id}</a></li>
 <li><a href="http://www.rtve.es/api/agr-programas/1130/programas.json">/agr-programas/{id}/programas</a></li>
 <li><a href="http://www.rtve.es/api/agr-programas/1130/videos.json">/agr-programas/{id}/videos</a></li>
@@ -127,9 +127,39 @@ Se recomienda utilizar <em><a href="http://jsonviewer.stack.hu/">Jsonviewer</a><
 <h3>Rutas</h3>
 <ul>
 <li><a href="http://www.rtve.es/api/multimedias.json">/multimedias</a></li>
-<li><a href="http://api.rtve.es/api/multimedias/mas-vistos.json">/multimedias/mas-vistos</a></li>
-<li><a href="http://api.rtve.es/api/multimedias/mas-populares.json">/multimedias/mas-populares</a></li>
+<li><a href="http://www.rtve.es/api/multimedias/mas-vistos.json">/multimedias/mas-vistos</a></li>
+<li><a href="http://www.rtve.es/api/multimedias/mas-populares.json">/multimedias/mas-populares</a></li>
 <li><a href="http://www.rtve.es/api/multimedias/3309959.json">/multimedias/{id}</a></li>
+</ul>
+<hr>
+
+
+<h1>Noticias</h1>
+
+<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/noticias/README.md" target="_blank"><p>Documentación</p></a>
+
+<h3>Ejemplos</h3>
+
+<ul>
+  <li><a href="noticias/demosimilaresmultimedia.html">Mostrando multimedia similar a la noticia partiendo de una ID</a></li>
+  <li><a href="noticias/demosimilares.html">Mostrando noticias similares partiendo de una ID</a></li>
+  <li><a href="noticias/demoid.html">Mostrando un archivo multimedia partiendo de una ID</a></li>
+  <li><a href="noticias/demopopulares.html">Mostrando los archivos multimedia más populares</a></li>
+  <li><a href="noticias/demovistos.html">Mostrando los archivos multimedia más vistos</a></li>
+</ul>
+
+<h3>Rutas</h3>
+<ul>
+<li><a href="http://www.rtve.es/api/noticias.json">/noticias</a></li>
+<li><a href="http://www.rtve.es/api/noticias/mas-vistos.json">/noticias/mas-vistos</a></li>
+<li><a href="http://www.rtve.es/api/noticias/mas-populares.json">/noticias/mas-populares</a></li>
+<li><a href="http://www.rtve.es/api/noticias/1231600.json">/noticias/{id}</a></li>
+<li><a href="http://www.rtve.es/api/noticias/1231600/tematicas.json">/noticias/{id}/tematicas</a></li>
+<li><a href="http://www.rtve.es/api/noticias/1231600/noticias/relacionados.json">/noticias/{id}/noticias/relacionados</a></li>
+<li><a href="http://www.rtve.es/api/noticias/1231600/noticias/especiales.json">/noticias/{id}/noticias/especiales</a></li>
+<li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/relacionados.json">/noticias/{id}/multimedias/relacionados</a></li>
+<li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/totem.json">/noticias/{id}/multimedias/totem</a></li>
+<li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/destacado.json">/noticias/{id}/multimedias/destacado</a></li>
 </ul>
 <hr>
 
