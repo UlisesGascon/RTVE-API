@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Audios por programa</title>
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+		#datos{
+			margin-top:40px;
+		}
+		.tarjeta{
+			max-width: 430px;
+		}
+		.texto-apoyo{
+			margin-top:20px;
+		}
+		.texto-titulo{
+			min-height: 60px;
+		}
+	</style>
+
+  </head>
+  <body>
+
+  	<div class="container">
+  		<div class="row" id="datos">
+  			<img id="cargando" src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif%3Fw%3D150%26h%3D120">
+  		</div>
+	</div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		
+		function sacarVariablesUrl() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		};
+
+		function iniciar () {
+			id = sacarVariablesUrl()["id"] || "91190";
+			var xmlHttp = new XMLHttpRequest();
+
+			xmlHttp.onreadystatechange = function() {
+		    
+			    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+			        
+			        datos = JSON.parse(xmlHttp.responseText);
+			        console.log(datos);
+
+			        for (var i = 0; i < datos.page.numElements; i++) {
+			        	var dato = datos.page.items[i];
+			        	console.log(dato);
+
+				        dato = datos.page.items[i];
+					    datosListos = '<div class="col-xs-6 col-lg-4"><div class="panel panel-info">';
+
+						datosListos += '<div class="panel-body"><a target="_blank" href="http://www.rtve.es/drmn/embed/audio/'+dato.id+'"><img class="img-responsive" src="'+dato.imageSEO+'" alt="'+dato.alt+'"></a>';
+
+						datosListos += '<div class="texto-titulo"><p>'+dato.title+'</p></div><hr>'
+
+						datosListos += '<p class="texto-apoyo"><a target="_blank" href="'+dato.htmlUrl+'"><span class="pull-left">Ver más</span></a>';
+						datosListos += '<span class="glyphicon glyphicon-eye-open pull-right">'+dato.numVisits+'</span></p></div>';
+						datosListos += '</div></div>';
+						
+						document.getElementById("datos").innerHTML += datosListos;
+					};
+					
+					document.getElementById("cargando").style.display = "none";
+						
+			    
+			    } else if (xmlHttp.readyState === 4 && xmlHttp.status === 400) {
+			        datos = JSON.parse(xmlHttp.responseText);
+			        console.error("ERROR! 400 - Solicitud incorrecta!");
+			        document.getElementById("cargando").style.display = "none";  
+			        document.getElementById("datos").innerHTML += "<h3>ERROR! 400 - Solicitud incorrecta!</h3>";    
+			    
+			    } else if (xmlHttp.readyState === 4 && xmlHttp.status === 404) {
+			        datos = JSON.parse(xmlHttp.responseText);
+			        console.error("ERROR! 404 - No encontrado!");
+			        document.getElementById("cargando").style.display = "none";
+			        document.getElementById("datos").innerHTML += "<h3>ERROR! 404 - No encontrado!</h3>";
+			    }
+			};
+
+			xmlHttp.open("GET", "http://www.rtve.es/api/programas/"+id+"/audios.json?size=60", true);
+			xmlHttp.send();
+		};
+		iniciar();
+	</script>
+  </body>
+</html>
