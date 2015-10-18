@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Una imagen por ID</title>
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+		#datos{
+			margin-top:40px;
+		}
+		.tarjeta{
+			max-width: 430px;
+		}
+	</style>
+
+  </head>
+  <body>
+  	<div class="container" id="datos">
+  		<img id="cargando" src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif%3Fw%3D150%26h%3D120">
+	</div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		
+		function sacarVariablesUrl() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+				vars[key] = value;
+			});
+			return vars;
+		};
+
+		function iniciar () {
+			id = sacarVariablesUrl()["id"] || "3313121";
+			var xmlHttp = new XMLHttpRequest();
+
+			xmlHttp.onreadystatechange = function() {
+		    
+			    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+			        
+			        datos = JSON.parse(xmlHttp.responseText);
+			        console.log(datos)
+			        dato = datos.page.items[0];
+			        var datosListos = '<div class="panel panel-info tarjeta">';
+					datosListos += '<div class="panel-body"><a target="_blank" href="http://www.rtve.es/drmn/embed/video/'+id+'"><img src="'+dato.imageSEO+'" alt="'+dato.alt+'"></a>';
+
+					datosListos += '<p>'+dato.title+'</p>';
+
+					datosListos += '<span class="glyphicon glyphicon-eye-open pull-right">'+dato.numVisits+'</span></p></div>';
+					datosListos += '<div class="text-center panel-footer">';
+					datosListos += '<a target="_blank" href="'+dato.htmlUrl+'">Ver más</a></div>';
+					datosListos += '</div>';
+					document.getElementById("cargando").style.display = "none";
+					document.getElementById("datos").innerHTML = datosListos;
+
+			    
+			    } else if (xmlHttp.readyState === 4 && xmlHttp.status === 400) {
+			        datos = JSON.parse(xmlHttp.responseText);
+			        console.error("ERROR! 400 - Solicitud incorrecta!");
+			        document.getElementById("cargando").style.display = "none";  
+			        document.getElementById("datos").innerHTML += "<h3>ERROR! 400 - Solicitud incorrecta!</h3>";       
+			    
+			    } else if (xmlHttp.readyState === 4 && xmlHttp.status === 404) {
+			        datos = JSON.parse(xmlHttp.responseText);
+			        console.error("ERROR! 404 - No encontrado!");
+			        document.getElementById("cargando").style.display = "none";
+			        document.getElementById("datos").innerHTML += "<h3>ERROR! 404 - No encontrado!</h3>";
+			    }
+			};
+
+			xmlHttp.open("GET", "http://api.rtve.es/api/imagenes/"+id+".json", true);
+			xmlHttp.send();
+		};
+		iniciar();
+	</script>
+  </body>
+</html>
