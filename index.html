@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Rtve-api by UlisesGascon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,575 +9,641 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
+</head>
+
+<body>
     <section class="page-header">
-      <h1 class="project-name">Rtve-api</h1>
-      <h2 class="project-tagline">Documentación (No Oficial) y ejemplos de como usar el API de RTVE</h2>
-      <a href="https://github.com/UlisesGascon/RTVE-API" class="btn">View on GitHub</a>
-      <a href="https://github.com/UlisesGascon/RTVE-API/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/UlisesGascon/RTVE-API/tarball/master" class="btn">Download .tar.gz</a>
+        <h1 class="project-name">RTVE-API</h1>
+        <h2 class="project-tagline">Documentación (No Oficial) y ejemplos de como usar el API de RTVE</h2>
+        <a href="https://github.com/UlisesGascon/RTVE-API" class="btn">View on GitHub</a>
+        <a href="https://github.com/UlisesGascon/RTVE-API/zipball/master" class="btn">Download .zip</a>
+        <a href="https://github.com/UlisesGascon/RTVE-API/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <h1>
+        <h1>
 <a id="rtve-api" class="anchor" href="#rtve-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>RTVE-API</h1>
 
-<h4>Documentación (No Oficial) y ejemplos de como usar el API de RTVE</h4>
+        <h4>Documentación (No Oficial) y ejemplos de como usar el API de RTVE</h4>
+
+        <p>Todas las rutas ya incluyen un ejemplo valido en formato json para ilustrar el funcionamiento. Se recomienda utilizar <em><a href="http://jsonviewer.stack.hu/">Jsonviewer</a></em> para poder visualizar los datos en formato Json más facilmente, por <a href="http://jsonviewer.stack.hu/#http://www.rtve.es/api/directos/ahora.json">ejemplo</a>.</p>
+        <hr>
 
-<p>Todas las rutas ya incluyen un ejemplo valido en formato json para ilustrar el funcionamiento. 
-Se recomienda utilizar <em><a href="http://jsonviewer.stack.hu/">Jsonviewer</a></em> para poder visualizar los datos en formato Json más facilmente, por <a href="http://jsonviewer.stack.hu/#http://www.rtve.es/api/directos/ahora.json">ejemplo</a>.</p>
-<hr>
-
-<h1>Encuestas</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/encuestas/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="encuestas/demo.html">Mostrando encuestas</a></li>
-</ul>
-
-<h3>Rutas</h3>
-
-<ul>
-<li><a href="http://www.rtve.es/api/encuestas.json">/encuestas</a></li>
-<li><a href="http://www.rtve.es/api/encuestas/mas-vistos.json">/encuestas/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/encuestas/mas-populares.json">/encuestas/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/encuestas/51931.json">/encuestas/{id}</a></li>
-<li><em>/encuestas/{id}/breadcrumb - ERROR 400</em></li>
-<li><a href="http://www.rtve.es/api/encuestas/51931/tematicas.json">/encuestas/{id}/tematicas</a></li>
-<li><a href="http://www.rtve.es/api/encuestas/51931/opciones.json">/encuestas/{id}/opciones</a></li>
-<li><a href="http://www.rtve.es/api/encuestas/51931/relacionadas.json">/encuestas/{id}/relacionadas</a></li>
-<li><a href="http://www.rtve.es/api/encuestas/51931/comentarios.json">/encuestas/{id}/comentarios</a></li>
-</ul>
-<hr>
-
-
-<h1>Videogalerias</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/videogalerias/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="videogalerias/demoid.html">Mostrando una videogaleria en un carousel partiendo de una ID</a></li>
-</ul>
-
-<h3>Rutas</h3>
-
-<ul>
-<li><a href="http://www.rtve.es/api/videogalerias.json">/videogalerias</a></li>
-<li><a href="http://www.rtve.es/api/videogalerias/mas-vistos.json">/videogalerias/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/videogalerias/mas-populares.json">/videogalerias/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/videogalerias/147975.json">/videogalerias/{id}</a></li>
-<li><em>/videogalerias/{id}/breadcrumb - ERROR 400</em></li>
-<li><a href="http://www.rtve.es/api/videogalerias/147975/multimedias.json">/videogalerias/{id}/multimedias</a></li>
-<li><a href="http://www.rtve.es/api/videogalerias/147975/relacionadas.json">/videogalerias/{id}/relacionadas</a></li>
-<li><a href="http://www.rtve.es/api/videogalerias/147975/links.json">/videogalerias/{id}/links</a></li>
-<li><a href="http://www.rtve.es/api/videogalerias/147975/estadisticas.json">/videogalerias/{id}/estadisticas</a></li>
-<li><em>/videogalerias/{id}/tematicas - ERROR 400</em></li>
-</ul>
-<hr>
-
-
-<h1>Agr-programas</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/agr-programas/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="agr-programas/demoaudios.html">Mostrando los audios de un agr-programas partiendo de una ID</a></li>
-  <li><a href="agr-programas/demovideos.html">Mostrando los videos de un agr-programas partiendo de una ID</a></li>
-  <li><a href="agr-programas/demomultimedias.html">Mostrando los archivos multimedia de un agr-programas partiendo de una ID</a></li>
-  <li><a href="agr-programas/demoprogramas.html">Mostrando los programas de un agr-programas partiendo de una ID</a></li>
-  <li><a href="agr-programas/demoid.html">Mostrando los detalles de un agr-programa partiendo de una ID</a></li>
-  <li><a href="agr-programas/demopopulares.html">Mostrando los agr-programas más populares</a></li>
-  <li><a href="agr-programas/demovistos.html">Mostrando los agr-programas más vistos</a></li>
-</ul>
-
-<h3>Rutas</h3>
-
-<ul>
-<li><a href="http://www.rtve.es/api/agr-programas.json">/agr-programas</a></li>
-<li><a href="http://www.rtve.es/api/agr-programas/mas-vistos.json">/agr-programas/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/agr-programas/mas-populares.json">/agr-programas/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/agr-programas/1130.json">/agr-programas/{id}</a></li>
-<li><a href="http://www.rtve.es/api/agr-programas/1130/programas.json">/agr-programas/{id}/programas</a></li>
-<li><a href="http://www.rtve.es/api/agr-programas/1130/videos.json">/agr-programas/{id}/videos</a></li>
-<li><a href="http://www.rtve.es/api/agr-programas/1130/audios.json">/agr-programas/{id}/audios</a></li>
-<li><a href="http://www.rtve.es/api/agr-programas/1130/multimedias.json">/agr-programas/{id}/multimedias</a></li>
-</ul>
-<hr>
-
-
-<h1>Multimedias</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/multimedias/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="multimedias/demoid.html">Mostrando un archivo multimedia partiendo de una ID</a></li>
-  <li><a href="multimedias/demopopulares.html">Mostrando los archivos multimedia más populares</a></li>
-  <li><a href="multimedias/demovistos.html">Mostrando los archivos multimedia más vistos</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/multimedias.json">/multimedias</a></li>
-<li><a href="http://www.rtve.es/api/multimedias/mas-vistos.json">/multimedias/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/multimedias/mas-populares.json">/multimedias/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/multimedias/3309959.json">/multimedias/{id}</a></li>
-</ul>
-<hr>
-
-
-<h1>Noticias</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/noticias/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="noticias/demosimilaresmultimedia.html">Mostrando multimedia similar a la noticia partiendo de una ID</a></li>
-  <li><a href="noticias/demosimilares.html">Mostrando noticias similares partiendo de una ID</a></li>
-  <li><a href="noticias/demoid.html">Mostrando un archivo multimedia partiendo de una ID</a></li>
-  <li><a href="noticias/demopopulares.html">Mostrando los archivos multimedia más populares</a></li>
-  <li><a href="noticias/demovistos.html">Mostrando los archivos multimedia más vistos</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/noticias.json">/noticias</a></li>
-<li><a href="http://www.rtve.es/api/noticias/mas-vistos.json">/noticias/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/noticias/mas-populares.json">/noticias/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/noticias/1231600.json">/noticias/{id}</a></li>
-<li><a href="http://www.rtve.es/api/noticias/1231600/tematicas.json">/noticias/{id}/tematicas</a></li>
-<li><a href="http://www.rtve.es/api/noticias/1231600/noticias/relacionados.json">/noticias/{id}/noticias/relacionados</a></li>
-<li><a href="http://www.rtve.es/api/noticias/1231600/noticias/especiales.json">/noticias/{id}/noticias/especiales</a></li>
-<li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/relacionados.json">/noticias/{id}/multimedias/relacionados</a></li>
-<li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/totem.json">/noticias/{id}/multimedias/totem</a></li>
-<li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/destacado.json">/noticias/{id}/multimedias/destacado</a></li>
-</ul>
-<hr>
-
-<h1>Cadenas</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/cadenas/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="cadenas/demoaudios.html">Mostrando los audios de una cadena partiendo de una ID</a></li>
-  <li><a href="cadenas/demovideos.html">Mostrando los videos de una cadena partiendo de una ID</a></li>
-  <li><a href="cadenas/demoprogramas.html">Mostrando los programas de una cadena partiendo de una ID</a></li>
-  <li><a href="cadenas/demomultimedias.html">Mostrando los archivos multimedia de una cadena partiendo de una ID</a></li>
-  <li><a href="cadenas/demoid.html">Mostrando los detalles de una cadena partiendo de una ID</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/cadenas.json">/cadenas</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/mas-vistos.json">/cadenas/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/mas-populares.json">/cadenas/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745.json">/cadenas/{id}</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/programas.json">/cadenas/{id}/programas</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/videos.json">/cadenas/{id}/videos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/audios.json">/cadenas/{id}/audios</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/multimedias.json">/cadenas/{id}/multimedias</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/directos/ahora.json">/cadenas/{id}/directos/ahora</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/directos/en-vivo/ahora.json">/cadenas/{id}/directos/en-vivo/ahora</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/directos/todos/ahora.json">/cadenas/{id}/directos/todos/ahora</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/directos/proximos.json">/cadenas/{id}/directos/proximos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/directos/en-vivo/proximos.json">/cadenas/{id}/directos/en-vivo/proximos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/directos/todos/proximos.json">/cadenas/{id}/directos/todos/proximos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/agrupadores.json">/cadenas/{id}/agrupadores</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/videos/mas-vistos.json">/cadenas/{id}/videos/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/audios/mas-vistos.json">/cadenas/{id}/audios/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/multimedias/mas-vistos.json">/cadenas/{id}/multimedias/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/videos/mas-populares.json">/cadenas/{id}/videos/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/audios/mas-populares.json">/cadenas/{id}/audios/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/cadenas/745/multimedias/mas-populares.json">/cadenas/{id}/multimedias/mas-populares</a></li>
-</ul>
-<hr>
-
-
-<h1>Agrupadores</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/agrupadores/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="agrupadores/demoaudios.html">Mostrando los audios de un agrupador partiendo de una ID</a></li>
-  <li><a href="agrupadores/demovideos.html">Mostrando los videos de un agrupador partiendo de una ID</a></li>
-  <li><a href="agrupadores/demomultimedias.html">Mostrando los archivos multimedia de un agrupador partiendo de una ID</a></li>
-  <li><a href="agrupadores/demoprogramas.html">Mostrando los programas de un agrupador partiendo de una ID</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/agrupadores.json">/agrupadores</a></li>
-<li><a href="http://www.rtve.es/api/agrupadores/42273.json">/agrupadores/{id}</a></li>
-<li><a href="http://www.rtve.es/api/agrupadores/42273/hijos.json">/agrupadores/{id}/hijos</a></li>
-<li><a href="http://www.rtve.es/api/agrupadores/42273/programas.json">/agrupadores/{id}/programas</a></li>
-<li><a href="http://www.rtve.es/api/agrupadores/42273/videos.json">/agrupadores/{id}/videos</a></li>
-<li><a href="http://www.rtve.es/api/agrupadores/42273/audios.json">/agrupadores/{id}/audios</a></li>
-<li><a href="http://www.rtve.es/api/agrupadores/42273/multimedias.json">/agrupadores/{id}/multimedias</a></li>
-</ul>
-<hr>
-
-
-<h1>Tematicas</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/tematicas/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="tematicas/demoaudios.html">Mostrando los audios de una temática partiendo de una ID</a></li>
-  <li><a href="tematicas/demovideos.html">Mostrando los videos de una temática partiendo de una ID</a></li>
-  <li><a href="tematicas/demonoticias.html">Mostrando las noticias de una temática partiendo de una ID</a></li>
-  <li><a href="tematicas/demoid.html">Mostrando los detalles de una temática partiendo de una ID</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/tematicas.json">/tematicas</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830.json">/tematicas/{id}</a></li>
-<li><a href="http://www.rtve.es/api/tematicas.json?uid=RT_TEMATI">/tematicas/{uid}</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/814/hijos.json">/tematicas/{id}/hijos</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/814/descendientes.json">/tematicas/{id}/descendientes</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/814/ancestros.json">/tematicas/{id}/ancestros</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/videos.json">/tematicas/{id}/videos</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/audios.json">/tematicas/{id}/audios</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/multimedias.json">/tematicas/{id}/multimedias</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/multimedias/mas-vistos.json">/tematicas/{id}/multimedias/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/videos/mas-vistos.json">/tematicas/{id}/videos/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/audios/mas-vistos.json">/tematicas/{id}/audios/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/multimedias/mas-populares.json">/tematicas/{id}/multimedias/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/videos/mas-populares.json">/tematicas/{id}/videos/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/audios/mas-populares.json">/tematicas/{id}/audios/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/noticias.json">/tematicas/{id}/noticias</a></li>
-<li><em>/tematicas/{id}/noticias/ticker - ERROR 400</em></li>
-<li><em>/tematicas/{id}/noticias/ticker/noticias - ERROR 400</em></li>
-<li><em>/tematicas/{id}/noticias/ticker/deportes - ERROR 400</em></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/noticias/mas-vistas.json">/tematicas/{id}/noticias/mas-vistas</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/noticias/mas-populares.json">/tematicas/{id}/noticias/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/tematicas/830/publicidad/roba.json">/tematicas/{id}/publicidad/roba</a></li>
-</ul>
-<hr>
-
-
-<h1>Blogs</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/blogs/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="blogs/demoid.html">Mostrando una entrada de blog partiendo de una ID</a></li>
-  <li><a href="blogs/demopopulares.html">Mostrando las entrada de blog más populares</a></li>
-  <li><a href="blogs/demovistos.html">Mostrando las entrada de blog más vistas</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/blogs.json">/blogs</a></li>
-<li><a href="http://www.rtve.es/api/blogs/mas-vistos.json">/blogs/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/blogs/mas-populares.json">/blogs/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/blogs/5330.json">/blogs/{id}</a></li>
-<li><em>/blogs/{id}/breadcrumb - ERROR 400</em></li>
-</ul>
-<hr>
-
-
-<h1>Programas</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/programas/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="programas/demoaudios.html">Mostrando los audios de un programa partiendo de una ID</a></li>
-  <li><a href="programas/demovideos.html">Mostrando los videos de un programa partiendo de una ID</a></li>
-  <li><a href="programas/demomultimedias.html">Mostrando los archivos multimedia de un programa partiendo de una ID</a></li>
-  <li><a href="programas/demoid.html">Mostrando los detalles de un programa partiendo de una ID</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/programas.json">/programas</a></li>
-<li><a href="http://www.rtve.es/api/programas/mas-vistos.json">/programas/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/programas/mas-populares.json">/programas/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010.json">/programas/{id}</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/secciones.json">/programas/{id}/secciones</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/temporadas.json">/programas/{id}/temporadas</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/agrupadores.json">/programas/{id}/agrupadores</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/videos.json">/programas/{id}/videos</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/audios.json">/programas/{id}/audios</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/multimedias.json">/programas/{id}/multimedias</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/relacionados.json">/programas/{id}/relacionados</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/otras-cadenas.json">/programas/{id}/otras-cadenas</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/info-infantil.json">/programas/{id}/info-infantil</a></li>
-<li><a href="http://www.rtve.es/api/programas/63010/relacionados/relacionados-por-idioma.json">/programas/{id}/relacionados/relacionados-por-idioma</a></li>
-</ul>
-<hr>
-
-
-
-<h1>Videos</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/videos/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="videos/demoid.html">Mostrando un vídeo partiendo de una ID</a></li>
-  <li><a href="videos/demopopulares.html">Mostrando los videos más populares</a></li>
-  <li><a href="videos/demovistos.html">Mostrando los videos más vistos</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/videos.json">/videos</a></li>
-<li><a href="http://www.rtve.es/api/videos/mas-vistos.json">/videos/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/videos/mas-populares.json">/videos/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918.json">/videos/{id}</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/tematicas.json">/videos/{id}/tematicas</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/calidades.json">/videos/{id}/calidades</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/cuepoints.json">/videos/{id}/cuepoints</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/config/video.json">/videos/{id}/config/video</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/transcripcion.json">/api/videos/{id}/transcripcion</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/temporadas.json">/videos/{id}/temporadas</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/relacionados.json">/videos/{id}/relacionados</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/relacionados/manuales.json">/videos/{id}/relacionados/manuales</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/publicidad.json">/videos/{id}/publicidad</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/comentarios.json">/videos/{id}/comentarios</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/relacionados/relacionados-por-idioma.json">/videos/{id}/relacionados/relacionados-por-idioma</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/estadisticas.json">/videos/{id}/estadisticas</a></li>
-<li><a href="http://www.rtve.es/api/videos/3309918/subtitulos.json">/videos/{id}/subtitulos</a></li>
-</ul>
-<hr>
-
-
-<h1>Audios</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/audios/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="audios/demoid.html">Mostrando un audio partiendo de una ID</a></li>
-  <li><a href="audios/demopopulares.html">Mostrando los audios más populares</a></li>
-  <li><a href="audios/demovistos.html">Mostrando los audios más vistos</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/audios.json">/audios</a></li>
-<li><a href="http://www.rtve.es/api/audios/mas-vistos.json">/audios/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/audios/mas-populares.json">/audios/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086.json">/audios/{id}</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/estadisticas.json">/audios/{id}/estadisticas</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/relacionados.json">/audios/{id}/relacionados</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/relacionados/relacionados-por-idioma.json">/audios/{id}/relacionados/relacionados-por-idioma</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/relacionados/manuales.json">/audios/{id}/relacionados/manuales</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/publicidad.json">/audios/{id}/publicidad</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/comentarios.json">/audios/{id}/comentarios</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/cuepoints.json">/audios/{id}/cuepoints</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/config/audio.json">/audios/{id}/config/audio</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/transcripcion.json">/audios/{id}/transcripcion</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/temporadas.json">/audios/{id}/temporadas</a></li>
-<li><a href="http://www.rtve.es/api/audios/3311086/calidades.json">/audios/{id}/calidades</a></li>
-</ul>
-<hr>
-
-
-<h1>Imágenes</h1>
-
-<a href="https://github.com/UlisesGascon/RTVE-API/blob/master/imagenes/README.md" target="_blank"><p>Documentación</p></a>
-
-<h3>Ejemplos</h3>
-
-<ul>
-  <li><a href="imagenes/demoid.html">Mostrando un imagen partiendo de una ID</a></li>
-  <li><a href="imagenes/demopopulares.html">Mostrando los imágenes más populares</a></li>
-  <li><a href="imagenes/demovistos.html">Mostrando los imágenes más vistos</a></li>
-</ul>
-
-<h3>Rutas</h3>
-<ul>
-<li><a href="http://www.rtve.es/api/imagenes.json">/imagenes</a></li>
-<li><a href="http://www.rtve.es/api/imagenes/mas-vistos.json">/imagenes/mas-vistos</a></li>
-<li><a href="http://www.rtve.es/api/imagenes/mas-populares.json">/imagenes/mas-populares</a></li>
-<li><a href="http://www.rtve.es/api/imagenes/3311283.json">/imagenes/{id}</a></li>
-<li><a href="http://www.rtve.es/api/imagenes/3311283/breadcrumb.json">/imagenes/{id}/breadcrumb</a></li>
-<li><a href="http://www.rtve.es/api/imagenes/3311283/calidades.json">/imagenes/{id}/calidades</a></li>
-<li><a href="http://www.rtve.es/api/imagenes/3311403/tematicas.json">/imagenes/{id}/tematicas</a></li>
-</ul>
-<hr>
-
-
-<h1>
+        <h1>Encuestas</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/encuestas/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="encuestas/demo.html">Mostrando encuestas</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+
+        <ul>
+            <li><a href="http://www.rtve.es/api/encuestas.json">/encuestas</a></li>
+            <li><a href="http://www.rtve.es/api/encuestas/mas-vistos.json">/encuestas/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/encuestas/mas-populares.json">/encuestas/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/encuestas/51931.json">/encuestas/{id}</a></li>
+            <li><em>/encuestas/{id}/breadcrumb - ERROR 400</em></li>
+            <li><a href="http://www.rtve.es/api/encuestas/51931/tematicas.json">/encuestas/{id}/tematicas</a></li>
+            <li><a href="http://www.rtve.es/api/encuestas/51931/opciones.json">/encuestas/{id}/opciones</a></li>
+            <li><a href="http://www.rtve.es/api/encuestas/51931/relacionadas.json">/encuestas/{id}/relacionadas</a></li>
+            <li><a href="http://www.rtve.es/api/encuestas/51931/comentarios.json">/encuestas/{id}/comentarios</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Videogalerias</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/videogalerias/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="videogalerias/demoid.html">Mostrando una videogaleria en un carousel partiendo de una ID</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+
+        <ul>
+            <li><a href="http://www.rtve.es/api/videogalerias.json">/videogalerias</a></li>
+            <li><a href="http://www.rtve.es/api/videogalerias/mas-vistos.json">/videogalerias/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/videogalerias/mas-populares.json">/videogalerias/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/videogalerias/147975.json">/videogalerias/{id}</a></li>
+            <li><em>/videogalerias/{id}/breadcrumb - ERROR 400</em></li>
+            <li><a href="http://www.rtve.es/api/videogalerias/147975/multimedias.json">/videogalerias/{id}/multimedias</a></li>
+            <li><a href="http://www.rtve.es/api/videogalerias/147975/relacionadas.json">/videogalerias/{id}/relacionadas</a></li>
+            <li><a href="http://www.rtve.es/api/videogalerias/147975/links.json">/videogalerias/{id}/links</a></li>
+            <li><a href="http://www.rtve.es/api/videogalerias/147975/estadisticas.json">/videogalerias/{id}/estadisticas</a></li>
+            <li><em>/videogalerias/{id}/tematicas - ERROR 400</em></li>
+        </ul>
+        <hr>
+
+
+        <h1>Agr-programas</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/agr-programas/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="agr-programas/demoaudios.html">Mostrando los audios de un agr-programas partiendo de una ID</a></li>
+            <li><a href="agr-programas/demovideos.html">Mostrando los videos de un agr-programas partiendo de una ID</a></li>
+            <li><a href="agr-programas/demomultimedias.html">Mostrando los archivos multimedia de un agr-programas partiendo de una ID</a></li>
+            <li><a href="agr-programas/demoprogramas.html">Mostrando los programas de un agr-programas partiendo de una ID</a></li>
+            <li><a href="agr-programas/demoid.html">Mostrando los detalles de un agr-programa partiendo de una ID</a></li>
+            <li><a href="agr-programas/demopopulares.html">Mostrando los agr-programas más populares</a></li>
+            <li><a href="agr-programas/demovistos.html">Mostrando los agr-programas más vistos</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+
+        <ul>
+            <li><a href="http://www.rtve.es/api/agr-programas.json">/agr-programas</a></li>
+            <li><a href="http://www.rtve.es/api/agr-programas/mas-vistos.json">/agr-programas/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/agr-programas/mas-populares.json">/agr-programas/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/agr-programas/1130.json">/agr-programas/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/agr-programas/1130/programas.json">/agr-programas/{id}/programas</a></li>
+            <li><a href="http://www.rtve.es/api/agr-programas/1130/videos.json">/agr-programas/{id}/videos</a></li>
+            <li><a href="http://www.rtve.es/api/agr-programas/1130/audios.json">/agr-programas/{id}/audios</a></li>
+            <li><a href="http://www.rtve.es/api/agr-programas/1130/multimedias.json">/agr-programas/{id}/multimedias</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Multimedias</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/multimedias/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="multimedias/demoid.html">Mostrando un archivo multimedia partiendo de una ID</a></li>
+            <li><a href="multimedias/demopopulares.html">Mostrando los archivos multimedia más populares</a></li>
+            <li><a href="multimedias/demovistos.html">Mostrando los archivos multimedia más vistos</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/multimedias.json">/multimedias</a></li>
+            <li><a href="http://www.rtve.es/api/multimedias/mas-vistos.json">/multimedias/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/multimedias/mas-populares.json">/multimedias/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/multimedias/3309959.json">/multimedias/{id}</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Noticias</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/noticias/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="noticias/demosimilaresmultimedia.html">Mostrando multimedia similar a la noticia partiendo de una ID</a></li>
+            <li><a href="noticias/demosimilares.html">Mostrando noticias similares partiendo de una ID</a></li>
+            <li><a href="noticias/demoid.html">Mostrando un archivo multimedia partiendo de una ID</a></li>
+            <li><a href="noticias/demopopulares.html">Mostrando los archivos multimedia más populares</a></li>
+            <li><a href="noticias/demovistos.html">Mostrando los archivos multimedia más vistos</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/noticias.json">/noticias</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/mas-vistos.json">/noticias/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/mas-populares.json">/noticias/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/1231600.json">/noticias/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/1231600/tematicas.json">/noticias/{id}/tematicas</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/1231600/noticias/relacionados.json">/noticias/{id}/noticias/relacionados</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/1231600/noticias/especiales.json">/noticias/{id}/noticias/especiales</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/relacionados.json">/noticias/{id}/multimedias/relacionados</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/totem.json">/noticias/{id}/multimedias/totem</a></li>
+            <li><a href="http://www.rtve.es/api/noticias/1231600/multimedias/destacado.json">/noticias/{id}/multimedias/destacado</a></li>
+        </ul>
+        <hr>
+
+        <h1>Cadenas</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/cadenas/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="cadenas/demoaudios.html">Mostrando los audios de una cadena partiendo de una ID</a></li>
+            <li><a href="cadenas/demovideos.html">Mostrando los videos de una cadena partiendo de una ID</a></li>
+            <li><a href="cadenas/demoprogramas.html">Mostrando los programas de una cadena partiendo de una ID</a></li>
+            <li><a href="cadenas/demomultimedias.html">Mostrando los archivos multimedia de una cadena partiendo de una ID</a></li>
+            <li><a href="cadenas/demoid.html">Mostrando los detalles de una cadena partiendo de una ID</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/cadenas.json">/cadenas</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/mas-vistos.json">/cadenas/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/mas-populares.json">/cadenas/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745.json">/cadenas/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/programas.json">/cadenas/{id}/programas</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/videos.json">/cadenas/{id}/videos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/audios.json">/cadenas/{id}/audios</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/multimedias.json">/cadenas/{id}/multimedias</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/directos/ahora.json">/cadenas/{id}/directos/ahora</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/directos/en-vivo/ahora.json">/cadenas/{id}/directos/en-vivo/ahora</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/directos/todos/ahora.json">/cadenas/{id}/directos/todos/ahora</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/directos/proximos.json">/cadenas/{id}/directos/proximos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/directos/en-vivo/proximos.json">/cadenas/{id}/directos/en-vivo/proximos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/directos/todos/proximos.json">/cadenas/{id}/directos/todos/proximos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/agrupadores.json">/cadenas/{id}/agrupadores</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/videos/mas-vistos.json">/cadenas/{id}/videos/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/audios/mas-vistos.json">/cadenas/{id}/audios/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/multimedias/mas-vistos.json">/cadenas/{id}/multimedias/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/videos/mas-populares.json">/cadenas/{id}/videos/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/audios/mas-populares.json">/cadenas/{id}/audios/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/cadenas/745/multimedias/mas-populares.json">/cadenas/{id}/multimedias/mas-populares</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Agrupadores</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/agrupadores/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="agrupadores/demoaudios.html">Mostrando los audios de un agrupador partiendo de una ID</a></li>
+            <li><a href="agrupadores/demovideos.html">Mostrando los videos de un agrupador partiendo de una ID</a></li>
+            <li><a href="agrupadores/demomultimedias.html">Mostrando los archivos multimedia de un agrupador partiendo de una ID</a></li>
+            <li><a href="agrupadores/demoprogramas.html">Mostrando los programas de un agrupador partiendo de una ID</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/agrupadores.json">/agrupadores</a></li>
+            <li><a href="http://www.rtve.es/api/agrupadores/42273.json">/agrupadores/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/agrupadores/42273/hijos.json">/agrupadores/{id}/hijos</a></li>
+            <li><a href="http://www.rtve.es/api/agrupadores/42273/programas.json">/agrupadores/{id}/programas</a></li>
+            <li><a href="http://www.rtve.es/api/agrupadores/42273/videos.json">/agrupadores/{id}/videos</a></li>
+            <li><a href="http://www.rtve.es/api/agrupadores/42273/audios.json">/agrupadores/{id}/audios</a></li>
+            <li><a href="http://www.rtve.es/api/agrupadores/42273/multimedias.json">/agrupadores/{id}/multimedias</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Tematicas</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/tematicas/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="tematicas/demoaudios.html">Mostrando los audios de una temática partiendo de una ID</a></li>
+            <li><a href="tematicas/demovideos.html">Mostrando los videos de una temática partiendo de una ID</a></li>
+            <li><a href="tematicas/demonoticias.html">Mostrando las noticias de una temática partiendo de una ID</a></li>
+            <li><a href="tematicas/demoid.html">Mostrando los detalles de una temática partiendo de una ID</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/tematicas.json">/tematicas</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830.json">/tematicas/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas.json?uid=RT_TEMATI">/tematicas/{uid}</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/814/hijos.json">/tematicas/{id}/hijos</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/814/descendientes.json">/tematicas/{id}/descendientes</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/814/ancestros.json">/tematicas/{id}/ancestros</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/videos.json">/tematicas/{id}/videos</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/audios.json">/tematicas/{id}/audios</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/multimedias.json">/tematicas/{id}/multimedias</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/multimedias/mas-vistos.json">/tematicas/{id}/multimedias/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/videos/mas-vistos.json">/tematicas/{id}/videos/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/audios/mas-vistos.json">/tematicas/{id}/audios/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/multimedias/mas-populares.json">/tematicas/{id}/multimedias/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/videos/mas-populares.json">/tematicas/{id}/videos/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/audios/mas-populares.json">/tematicas/{id}/audios/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/noticias.json">/tematicas/{id}/noticias</a></li>
+            <li><em>/tematicas/{id}/noticias/ticker - ERROR 400</em></li>
+            <li><em>/tematicas/{id}/noticias/ticker/noticias - ERROR 400</em></li>
+            <li><em>/tematicas/{id}/noticias/ticker/deportes - ERROR 400</em></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/noticias/mas-vistas.json">/tematicas/{id}/noticias/mas-vistas</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/noticias/mas-populares.json">/tematicas/{id}/noticias/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/tematicas/830/publicidad/roba.json">/tematicas/{id}/publicidad/roba</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Blogs</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/blogs/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="blogs/demoid.html">Mostrando una entrada de blog partiendo de una ID</a></li>
+            <li><a href="blogs/demopopulares.html">Mostrando las entrada de blog más populares</a></li>
+            <li><a href="blogs/demovistos.html">Mostrando las entrada de blog más vistas</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/blogs.json">/blogs</a></li>
+            <li><a href="http://www.rtve.es/api/blogs/mas-vistos.json">/blogs/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/blogs/mas-populares.json">/blogs/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/blogs/5330.json">/blogs/{id}</a></li>
+            <li><em>/blogs/{id}/breadcrumb - ERROR 400</em></li>
+        </ul>
+        <hr>
+
+
+        <h1>Programas</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/programas/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="programas/demoaudios.html">Mostrando los audios de un programa partiendo de una ID</a></li>
+            <li><a href="programas/demovideos.html">Mostrando los videos de un programa partiendo de una ID</a></li>
+            <li><a href="programas/demomultimedias.html">Mostrando los archivos multimedia de un programa partiendo de una ID</a></li>
+            <li><a href="programas/demoid.html">Mostrando los detalles de un programa partiendo de una ID</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/programas.json">/programas</a></li>
+            <li><a href="http://www.rtve.es/api/programas/mas-vistos.json">/programas/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/programas/mas-populares.json">/programas/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010.json">/programas/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/secciones.json">/programas/{id}/secciones</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/temporadas.json">/programas/{id}/temporadas</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/agrupadores.json">/programas/{id}/agrupadores</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/videos.json">/programas/{id}/videos</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/audios.json">/programas/{id}/audios</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/multimedias.json">/programas/{id}/multimedias</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/relacionados.json">/programas/{id}/relacionados</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/otras-cadenas.json">/programas/{id}/otras-cadenas</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/info-infantil.json">/programas/{id}/info-infantil</a></li>
+            <li><a href="http://www.rtve.es/api/programas/63010/relacionados/relacionados-por-idioma.json">/programas/{id}/relacionados/relacionados-por-idioma</a></li>
+        </ul>
+        <hr>
+
+
+
+        <h1>Videos</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/videos/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="videos/demoid.html">Mostrando un vídeo partiendo de una ID</a></li>
+            <li><a href="videos/demopopulares.html">Mostrando los videos más populares</a></li>
+            <li><a href="videos/demovistos.html">Mostrando los videos más vistos</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/videos.json">/videos</a></li>
+            <li><a href="http://www.rtve.es/api/videos/mas-vistos.json">/videos/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/videos/mas-populares.json">/videos/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918.json">/videos/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/tematicas.json">/videos/{id}/tematicas</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/calidades.json">/videos/{id}/calidades</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/cuepoints.json">/videos/{id}/cuepoints</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/config/video.json">/videos/{id}/config/video</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/transcripcion.json">/api/videos/{id}/transcripcion</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/temporadas.json">/videos/{id}/temporadas</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/relacionados.json">/videos/{id}/relacionados</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/relacionados/manuales.json">/videos/{id}/relacionados/manuales</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/publicidad.json">/videos/{id}/publicidad</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/comentarios.json">/videos/{id}/comentarios</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/relacionados/relacionados-por-idioma.json">/videos/{id}/relacionados/relacionados-por-idioma</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/estadisticas.json">/videos/{id}/estadisticas</a></li>
+            <li><a href="http://www.rtve.es/api/videos/3309918/subtitulos.json">/videos/{id}/subtitulos</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Audios</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/audios/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="audios/demoid.html">Mostrando un audio partiendo de una ID</a></li>
+            <li><a href="audios/demopopulares.html">Mostrando los audios más populares</a></li>
+            <li><a href="audios/demovistos.html">Mostrando los audios más vistos</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/audios.json">/audios</a></li>
+            <li><a href="http://www.rtve.es/api/audios/mas-vistos.json">/audios/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/audios/mas-populares.json">/audios/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086.json">/audios/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/estadisticas.json">/audios/{id}/estadisticas</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/relacionados.json">/audios/{id}/relacionados</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/relacionados/relacionados-por-idioma.json">/audios/{id}/relacionados/relacionados-por-idioma</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/relacionados/manuales.json">/audios/{id}/relacionados/manuales</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/publicidad.json">/audios/{id}/publicidad</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/comentarios.json">/audios/{id}/comentarios</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/cuepoints.json">/audios/{id}/cuepoints</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/config/audio.json">/audios/{id}/config/audio</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/transcripcion.json">/audios/{id}/transcripcion</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/temporadas.json">/audios/{id}/temporadas</a></li>
+            <li><a href="http://www.rtve.es/api/audios/3311086/calidades.json">/audios/{id}/calidades</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Imágenes</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/imagenes/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="imagenes/demoid.html">Mostrando un imagen partiendo de una ID</a></li>
+            <li><a href="imagenes/demopopulares.html">Mostrando los imágenes más populares</a></li>
+            <li><a href="imagenes/demovistos.html">Mostrando los imágenes más vistos</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/imagenes.json">/imagenes</a></li>
+            <li><a href="http://www.rtve.es/api/imagenes/mas-vistos.json">/imagenes/mas-vistos</a></li>
+            <li><a href="http://www.rtve.es/api/imagenes/mas-populares.json">/imagenes/mas-populares</a></li>
+            <li><a href="http://www.rtve.es/api/imagenes/3311283.json">/imagenes/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/imagenes/3311283/breadcrumb.json">/imagenes/{id}/breadcrumb</a></li>
+            <li><a href="http://www.rtve.es/api/imagenes/3311283/calidades.json">/imagenes/{id}/calidades</a></li>
+            <li><a href="http://www.rtve.es/api/imagenes/3311403/tematicas.json">/imagenes/{id}/tematicas</a></li>
+        </ul>
+        <hr>
+
+
+        <h1>Medios</h1>
+
+        <a href="https://github.com/UlisesGascon/RTVE-API/blob/master/medios/README.md" target="_blank">
+            <p>Documentación</p>
+        </a>
+
+        <h3>Ejemplos</h3>
+
+        <ul>
+            <li><a href="medios/demoaudios.html">Mostrando los audios de un medio partiendo de una ID</a></li>
+            <li><a href="medios/demovideos.html">Mostrando los videos de un medio partiendo de una ID</a></li>
+            <li><a href="medios/demomultimedias.html">Mostrando los archivos multimedia de un medio partiendo de una ID</a></li>
+            <li><a href="medios/demoprogramas.html">Mostrando los programas de un medio partiendo de una ID</a></li>
+            <li><a href="medios/demoid.html">Mostrando los detalles de un medio partiendo de una ID</a></li>
+            <li><a href="medios/demopopulares.html">Mostrando los archivos multimedia más populares del medio</a></li>
+            <li><a href="medios/demovistos.html">Mostrando los archivos multimedia más vistos del medio</a></li>
+        </ul>
+
+        <h3>Rutas</h3>
+        <ul>
+            <li><a href="http://www.rtve.es/api/medios.json">/medios</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310.json">/medios/{id}</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310/cadenas.json">/medios/{id}/cadenas</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310/programas.json">/medios/{id}/programas</a></li>
+            <li><em>/medios/{id}/videos - ERROR 400</em></li>
+            <li><em>/medios/{id}/audios - ERROR 400</em></li>
+            <li><em>/medios/{id}/multimedias - ERROR 400</em></li>
+            <li><a href="http://www.rtve.es/api/medios/310/directos/en-vivo/ahora.json">/medios/{id}/directos/en-vivo/ahora</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310/directos/todos/ahora.json">/medios/{id}/directos/todos/ahora</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310/directos/proximos.json">/medios/{id}/directos/proximos</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310/directos/en-vivo/proximos.json">/medios/{id}/directos/en-vivo/proximos</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310/directos/todos/proximos.json">/medios/{id}/directos/todos/proximos</a></li>
+            <li><a href="http://www.rtve.es/api/medios/310/agrupadores.json">/medios/{id}/agrupadores</a></li>
+            <li><em>/medios/{id}/videos/mas-vistos - ERROR 400</em></li>
+            <li><em>/medios/{id}/audios/mas-vistos - ERROR 400</em></li>
+            <li><em>/medios/{id}/multimedias/mas-vistos - ERROR 400</em></li>
+            <li><em>/medios/{id}/videos/mas-populares - ERROR 400</em></li>
+            <li><em>/medios/{id}/audios/mas-populares - ERROR 400</em></li>
+            <li><em>/medios/{id}/multimedias/mas-populares - ERROR 400</em></li>
+        </ul>
+        <hr>
+
+
+        <h1>
 <a id="queries" class="anchor" href="#queries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Queries</h1>
 
-<ul>
-<li>
-<p><strong>Format</strong>
-Es posible solicitar los datos en diversos formatos, esta extensión debe colocarse al final de la URL.</p>
+        <ul>
+            <li>
+                <p><strong>Format</strong> Es posible solicitar los datos en diversos formatos, esta extensión debe colocarse al final de la URL.</p>
 
-<ul>
-<li><a href="https://www.wikiwand.com/es/JSON">Json</a></li>
-</ul>
+                <ul>
+                    <li><a href="https://www.wikiwand.com/es/JSON">Json</a></li>
+                </ul>
 
-<pre><code>http://api.rtve.es/api/tematicas.json
+                <pre><code>http://api.rtve.es/api/tematicas.json
 </code></pre>
 
-<ul>
-<li><a href="https://www.wikiwand.com/es/Extensible_Markup_Language">Xml</a></li>
-</ul>
+                <ul>
+                    <li><a href="https://www.wikiwand.com/es/Extensible_Markup_Language">Xml</a></li>
+                </ul>
 
-<pre><code>http://api.rtve.es/api/tematicas.xml
+                <pre><code>http://api.rtve.es/api/tematicas.xml
 </code></pre>
 
-<ul>
-<li><a href="https://www.wikiwand.com/es/RSS">RSS</a></li>
-</ul>
+                <ul>
+                    <li><a href="https://www.wikiwand.com/es/RSS">RSS</a></li>
+                </ul>
 
-<pre><code>http://api.rtve.es/api/tematicas.rss
+                <pre><code>http://api.rtve.es/api/tematicas.rss
 </code></pre>
 
-<ul>
-<li>Txt, <em>Es una version del xml</em>
-</li>
-</ul>
+                <ul>
+                    <li>Txt, <em>Es una version del xml</em>
+                    </li>
+                </ul>
 
-<pre><code>http://api.rtve.es/api/tematicas.txt
+                <pre><code>http://api.rtve.es/api/tematicas.txt
 </code></pre>
-</li>
-<li><p><strong>Size</strong>
-Es posible definir la cantidad de datos que esperamos. Mínimo 1 - Máximo 60</p></li>
-</ul>
+            </li>
+            <li>
+                <p><strong>Size</strong> Es posible definir la cantidad de datos que esperamos. Mínimo 1 - Máximo 60</p>
+            </li>
+        </ul>
 
-<pre><code>http://api.rtve.es/api/tematicas.json?size=60
-</code></pre>
-
-<ul>
-<li>
-<strong>Pages</strong>
-Es posible definir la pagina que esperamos. Por defecto se carga la primera página.
-El número total de páginas esta incluido en la respuesta como <em>"totalPages"</em>
-</li>
-</ul>
-
-<pre><code>http://api.rtve.es/api/tematicas.json?page=100
+        <pre><code>http://api.rtve.es/api/tematicas.json?size=60
 </code></pre>
 
-<ul>
-<li>
-<p><strong>Lang</strong>
-Es posible realizar la petición para ver el contenido en varios idiomas. Por defecto los resultados se muestran en español</p>
+        <ul>
+            <li>
+                <strong>Pages</strong> Es posible definir la pagina que esperamos. Por defecto se carga la primera página. El número total de páginas esta incluido en la respuesta como <em>"totalPages"</em>
+            </li>
+        </ul>
 
-<ul>
-<li>Español</li>
-</ul>
-
-<pre><code>http://api.rtve.es/api/videos.json?lang=es
+        <pre><code>http://api.rtve.es/api/tematicas.json?page=100
 </code></pre>
 
-<ul>
-<li>Catalán</li>
-</ul>
+        <ul>
+            <li>
+                <p><strong>Lang</strong> Es posible realizar la petición para ver el contenido en varios idiomas. Por defecto los resultados se muestran en español</p>
 
-<pre><code>http://api.rtve.es/api/videos.json?lang=ca
-</code></pre>
-</li>
-<li><p><strong>startWithLetter</strong>
-Es posible realizar un filtro de los programas, limtiando los resutlados a la letra deseada </p></li>
-</ul>
+                <ul>
+                    <li>Español</li>
+                </ul>
 
-<pre><code>http://www.rtve.es/api/programas.json?startWithLetter=z
+                <pre><code>http://api.rtve.es/api/videos.json?lang=es
 </code></pre>
 
-<ul>
-<li>
-<strong>from</strong>
-Podemos realizar un filtro usando una fecha. El formato es <em>ddMMyyyyHHmmss</em>
-</li>
-</ul>
+                <ul>
+                    <li>Catalán</li>
+                </ul>
 
-<pre><code>http://www.rtve.es/api/programas.json?from=02102015001015
+                <pre><code>http://api.rtve.es/api/videos.json?lang=ca
+</code></pre>
+            </li>
+            <li>
+                <p><strong>startWithLetter</strong> Es posible realizar un filtro de los programas, limtiando los resutlados a la letra deseada </p>
+            </li>
+        </ul>
+
+        <pre><code>http://www.rtve.es/api/programas.json?startWithLetter=z
 </code></pre>
 
-<ul>
-<li>
-<strong>lastDays</strong>
-Podemos realizar un filtro contando los dias hacia atras.</li>
-</ul>
+        <ul>
+            <li>
+                <strong>from</strong> Podemos realizar un filtro usando una fecha. El formato es <em>ddMMyyyyHHmmss</em>
+            </li>
+        </ul>
 
-<pre><code>http://www.rtve.es/api/programas.json?lastDays=2
+        <pre><code>http://www.rtve.es/api/programas.json?from=02102015001015
 </code></pre>
-<hr>
+
+        <ul>
+            <li>
+                <strong>lastDays</strong> Podemos realizar un filtro contando los dias hacia atras.</li>
+        </ul>
+
+        <pre><code>http://www.rtve.es/api/programas.json?lastDays=2
+</code></pre>
+        <hr>
 
 
-<h1>
+        <h1>
 <a id="limitaciones-conocidas" class="anchor" href="#limitaciones-conocidas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Limitaciones Conocidas</h1>
 
-<ul>
-<li>
-<strong>?size=</strong> -&gt; <em>Mínimo 1 - Máximo 60</em>
-</li>
-<li>
-<strong>?lang=</strong> -&gt; <em>"es"</em> para español y <em>"ca"</em> para catalán</li>
-<li>
-<strong>Videos</strong> -&gt; <em>Es necesario un Token y un Provedor, la url por defecto de todos los videos es "<a href="http://ztnr.rtve.es/ztnr/res/_PROVIDER_/video/med/_TOKEN_">http://ztnr.rtve.es/ztnr/res/_PROVIDER_/video/med/_TOKEN_</a>"</em>
-</li>
-<li>
-<strong>/blogs/mas-vistos</strong> -&gt; duplica/triplica los elementos</li>
-<li>
-<strong>/blogs/mas-populares</strong> -&gt; duplica/triplica los elementos</li>
-</ul>
-<hr>
+        <ul>
+            <li>
+                <strong>?size=</strong> -&gt; <em>Mínimo 1 - Máximo 60</em>
+            </li>
+            <li>
+                <strong>?lang=</strong> -&gt; <em>"es"</em> para español y <em>"ca"</em> para catalán</li>
+            <li>
+                <strong>Videos</strong> -&gt; <em>Es necesario un Token y un Provedor, la url por defecto de todos los videos es "<a href="http://ztnr.rtve.es/ztnr/res/_PROVIDER_/video/med/_TOKEN_">http://ztnr.rtve.es/ztnr/res/_PROVIDER_/video/med/_TOKEN_</a>"</em>
+            </li>
+            <li>
+                <strong>/blogs/mas-vistos</strong> -&gt; duplica/triplica los elementos</li>
+            <li>
+                <strong>/blogs/mas-populares</strong> -&gt; duplica/triplica los elementos</li>
+        </ul>
+        <hr>
 
 
-<h1>
+        <h1>
 <a id="alternativas-conocidas" class="anchor" href="#alternativas-conocidas" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternativas Conocidas</h1>
 
-<p><strong>Embed</strong></p>
+        <p><strong>Embed</strong></p>
 
-<p>Video <em>embed</em></p>
+        <p>Video <em>embed</em></p>
 
-<ul>
-<li><a href="http://www.rtve.es/drmn/embed/video/3310258">http://www.rtve.es/drmn/embed/video/{id}</a></li>
-</ul>
+        <ul>
+            <li><a href="http://www.rtve.es/drmn/embed/video/3310258">http://www.rtve.es/drmn/embed/video/{id}</a></li>
+        </ul>
 
-<p>Audio <em>embed</em></p>
+        <p>Audio <em>embed</em></p>
 
-<ul>
-<li><a href="http://www.rtve.es/drmn/embed/audio/3311086">http://www.rtve.es/drmn/embed/audio/{id}</a></li>
-</ul>
-<hr>
+        <ul>
+            <li><a href="http://www.rtve.es/drmn/embed/audio/3311086">http://www.rtve.es/drmn/embed/audio/{id}</a></li>
+        </ul>
+        <hr>
 
 
-<h1>
+        <h1>
 <a id="información-adiccional" class="anchor" href="#informaci%C3%B3n-adiccional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Información Adiccional</h1>
 
-<ul>
-<li><a href="https://es.wikibooks.org/wiki/API_Rtve">API RTVE en Wikibooks</a></li>
-</ul>
+        <ul>
+            <li><a href="https://es.wikibooks.org/wiki/API_Rtve">API RTVE en Wikibooks</a></li>
+        </ul>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/UlisesGascon/RTVE-API">Rtve-api</a> is maintained by <a href="https://github.com/UlisesGascon">UlisesGascon</a>.</span>
+        <footer class="site-footer">
+            <span class="site-footer-owner"><a href="https://github.com/UlisesGascon/RTVE-API">Rtve-api</a> is maintained by <a href="https://github.com/UlisesGascon">UlisesGascon</a>.</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+            <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        </footer>
 
     </section>
 
-  
-  </body>
+
+</body>
+
 </html>
